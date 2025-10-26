@@ -5,3 +5,23 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.p-inputtext {
+    --p-inputtext-background: oklch(37.2% 0.044 257.287) !important;
+    --p-inputtext-focus-border-color: oklch(62.3% 0.214 259.815) !important;
+    --p-inputtext-border-color: transparent !important;
+
+    transition: all 200ms;
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgb(59 130 246), 0 0 10px rgba(59, 130, 246, 0.3) !important;
+    }
+}
+
+.p-floatlabel label {
+    color: #eef1f5 !important;
+    --p-floatlabel-font-weight: 500;
+    --p-floatlabel-active-font-weight: 500;
+    --p-floatlabel-on-active-background: oklch(37.2% 0.044 257.287) !important;
+    font-weight: var(--p-floatlabel-active-font-weight);
+}
